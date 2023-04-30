@@ -1,0 +1,30 @@
+{
+  "name": "healthify",
+  "version": "1.0.0",
+  "description": "Wellbeing application with goal setting and tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scamer300/Healthify.git"
+  },
+  "keywords": [
+    "node.js",
+    "express"
+  ],
+  "author": "Stacey Cameron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scamer300/Healthify/issues"
+  },
+  "homepage": "https://github.com/scamer300/Healthify#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "express": "^4.18.2",
+    "mustache": "^4.2.0",
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.22"
+  }
+}
