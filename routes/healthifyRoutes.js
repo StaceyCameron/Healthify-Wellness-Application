@@ -3,6 +3,7 @@ const router = express.Router();
 const controller = require('../controllers/healthifyControllers');
 
 router.get('/', controller.show_landing_page);
+router.get('/home', controller.show_landing_page);
 router.get('/about', controller.show_about_page);
 router.get('/register', controller.show_register_page);
 router.get('/login', controller.show_login_page);
