@@ -7,11 +7,11 @@ exports.show_about_page = function(req, res) {
 }
 
 exports.show_register_page = function(req, res) {
-    res.render("/register");
+    res.render("user/register");
 }
 
 exports.show_login_page = function(req, res) {
-    res.render("/login");
+    res.render("user/login");
 }
 
 exports.show_info_page = function (req, res) {
