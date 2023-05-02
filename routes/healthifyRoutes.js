@@ -9,6 +9,7 @@ router.get('/register', controller.show_register_page);
 router.get('/login', controller.show_login_page);
 router.get('/info', controller.show_info_page);
 router.get('/goals', controller.show_goals_page);
+router.get('/complete', controller.show_complete_page);
 
 router.use(function(req, res) {
     res.status(404);
