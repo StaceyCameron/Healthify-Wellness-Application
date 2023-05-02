@@ -21,7 +21,3 @@ exports.show_info_page = function (req, res) {
 exports.show_goals_page = function (req, res) {
     res.render("goals");
 }
-
-exports.show_achievements_page = function (req, res) {
-    res.render("achievements");
-}
