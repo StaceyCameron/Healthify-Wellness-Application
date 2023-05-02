@@ -1,0 +1,24 @@
+.banner {
+    width:100%;
+    height:30%;
+    background-color: #046880;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    color: #fff;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        height:25%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .banner {
+        height:25%;
+    }
+}
