@@ -7,12 +7,59 @@
     <div>
         {{>elements/navbar}}
     </div>
-    <div>
-        <h1>Register Page</h1>
-        <p>
-            Not yet implemented.
-        </p>
+
+    <!-- Banner -->
+    <div class="banner text-center justify-content-center align-self-center pt-4">
+        <h1 class="pt-3">Register</h1>
     </div>
+    <!-- Banner -->
+
+    <div class="container.fluid">
+        <div class="row">
+          <!-- Inspiration Message (Left Side) -->
+          <div class="blockRegister col ml-5 pl-5"></div>
+
+          <!-- Register Form(Right Side) -->
+          <div class="col text-center pt-5 mt-5 mr-5">
+            <h4>Start your wellbeing journey today!</h4>
+
+          <!-- Register Form -->
+          <div class="row pt-4">
+          <div class="col" id="formContent">
+            <form method="POST" action="/register">
+                <div class="form-group">
+                    <div class="col-xs-3 mx-5">
+                      <label for="Name">Name</label>
+                      <input class="form-control" id="name" type="text" placeholder="Enter your name here...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-3 mx-5">
+                      {{user-name-error}}
+                      <label for="Username">Username</label>
+                      <input class="form-control" id="username" type="text" placeholder="Enter your username here...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-3 mx-5">
+                      <label for="password">Password (8 characters minimum)</label>
+                      <input class="form-control" id="pass" name="pass" type="password" placeholder="Enter your password here..." minlength="8" required>
+                    </div>
+                </div>
+                <!-- Remember Me and Forgotten Password -->
+            <input type="submit" value="Register" class="btn btn-dark mt-2 px-5">
+            </form>
+            <!-- Register Buttons -->
+            <div class="text-center">
+              <p>Already have an account? <a class="text-dark" href="/login">Login Here</a></p>
+            </div>
+          </div>
+          </div>
+          <!-- Register Form -->
+          </div>
+        </div>
+    </div>
+
 </body>
 
 <footer>
