@@ -3,7 +3,7 @@
     {{>elements/header}}
 </head>
 
-<body>
+<body class=".container-fluid">
     <div>
         {{>elements/navbar}}
     </div>
@@ -13,6 +13,78 @@
         <h1 class="pt-3">Goals</h1>
     </div>
     <!-- Banner -->
+
+    <!-- Functions -->
+    <div class="row pt-4 pb-4">
+        <!-- Button to trigger modal-->
+        <div class="col-3"></div>
+        <div class="col-2 text-end">
+          <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#myModal" style="background-color: #046880">
+            Create Goal
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Create a Goal</h4>
+              </div>
+              <div class="modal-body text-center">
+                <p>Some text in the modal.</p>
+              </div>
+              <div class="modal-footer text-center">
+                <button type="button" class="btn text-white" data-bs-dismiss="modal" style="background-color: #046880">
+                  Submit
+                </button>
+                <button type="button" class="btn text-white" data-bs-dismiss="modal" style="background-color: #046880">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>   
+        </div>
+        <!-- Button Group -->
+        <div class="col-2 text-center">
+          <div class="btn-group">
+            <a href="/goals" class="btn text-white active" style="background-color: #046880">Active</a>
+            <a class="btn text-white" href="/complete" role="button" style="background-color: #046880">Complete</a>
+          </div>
+        </div>
+        <!-- Search Bar -->
+        <div class="col-2 text-start">
+          <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fa fa-search"></i>
+            </span>
+          </div> 
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <!-- Functions -->
+
+    <!-- Goals Table -->
+    <table class="table pt-3">
+      <thead>
+        <tr>
+          <th scope="col">Goal</th>
+          <th scope="col">Description</th>
+          <th scope="col">Progress</th>
+          <th scope="col">Complete?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Walking</th>
+          <td>Walk 8000 steps</td>
+          <td>50%</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Goals Table -->
 
 </body>
 
