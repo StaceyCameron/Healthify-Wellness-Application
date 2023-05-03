@@ -26,25 +26,25 @@
           <!-- Register Form -->
           <div class="row pt-4">
           <div class="col" id="formContent">
-            <form method="POST" action="/register">
+            <form method="post" action="/register">
                 <div class="form-group">
-                    <div class="col-xs-3 mx-5">
-                      <label for="Name">Name</label>
-                      <input class="form-control" id="name" type="text" placeholder="Enter your name here...">
-                    </div>
+                  <div class="col-xs-3 mx-5">
+                    <label for="Name">Name</label>
+                    <input class="form-control" id="fname" type="text" placeholder="Enter your name here..." reuired>
+                  </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-xs-3 mx-5">
-                      {{user-name-error}}
-                      <label for="Username">Username</label>
-                      <input class="form-control" id="username" type="text" placeholder="Enter your username here...">
-                    </div>
+                  <div class="col-xs-3 mx-5">
+                    {{user-name-error}}
+                    <label for="Username">Username</label>
+                    <input class="form-control" id="username" type="text" placeholder="Enter your username here..." required>
+                  </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-xs-3 mx-5">
-                      <label for="password">Password (8 characters minimum)</label>
-                      <input class="form-control" id="pass" name="pass" type="password" placeholder="Enter your password here..." minlength="8" required>
-                    </div>
+                  <div class="col-xs-3 mx-5">
+                    <label for="password">Password (8 characters minimum)</label>
+                    <input class="form-control" id="pass" name="pass" type="password" placeholder="Enter your password here..." minlength="8" required>
+                  </div>
                 </div>
                 <!-- Remember Me and Forgotten Password -->
             <input type="submit" value="Register" class="btn text-white mt-2 px-5" style="background-color: #046880" >

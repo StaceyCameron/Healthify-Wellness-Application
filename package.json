@@ -4,9 +4,8 @@
   "description": "Wellbeing application with goal setting and tracker",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon index.js"
   },
-  "dev": "nodemon -e js,mustache ./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scamer300/Healthify.git"
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/scamer300/Healthify#readme",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "bootstrap": "^5.2.3",
     "express": "^4.18.2",
     "mustache": "^4.2.0",
