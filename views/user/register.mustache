@@ -26,18 +26,18 @@
           <!-- Register Form -->
           <div class="row pt-4">
           <div class="col" id="formContent">
-            <form method="post" action="/register">
+            <form method="POST" role="/register">
                 <div class="form-group">
-                  <div class="col-xs-3 mx-5">
-                    <label for="Name">Name</label>
-                    <input class="form-control" id="fname" type="text" placeholder="Enter your name here..." reuired>
+                  <div class="form-group">
+                    <div class="col-xs-3 mx-5">
+                      <label for="fname">Name</label>
+                      <input class="form-control" id="fname" name="fname" type="text" placeholder="Enter your name here..." required>
+                    </div>
                   </div>
-                </div>
-                <div class="form-group">
                   <div class="col-xs-3 mx-5">
                     {{user-name-error}}
-                    <label for="Username">Username</label>
-                    <input class="form-control" id="username" type="text" placeholder="Enter your username here..." required>
+                    <label for="username">Username</label>
+                    <input class="form-control" id="username" name="username" type="text" placeholder="Enter your username here..." required>
                   </div>
                 </div>
                 <div class="form-group">
@@ -47,7 +47,9 @@
                   </div>
                 </div>
                 <!-- Remember Me and Forgotten Password -->
-            <input type="submit" value="Register" class="btn text-white mt-2 px-5" style="background-color: #046880" >
+                <div class="form-group">
+                  <input type="submit" value="Register" class="btn text-white mt-2 px-5" style="background-color: #046880" >
+                </div>
             </form>
             <!-- Register Buttons -->
             <div class="text-center">

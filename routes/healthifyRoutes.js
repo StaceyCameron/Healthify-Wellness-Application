@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/healthifyControllers');
+const controller = require('../controllers/healthifyControllers.js');
 
 router.get('/', controller.show_landing_page);
 router.get('/home', controller.show_landing_page);

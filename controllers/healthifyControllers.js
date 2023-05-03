@@ -34,17 +34,20 @@ exports.post_new_user = function(req, res) {
     const user = req.body.username;
     const password = req.body.pass;
 
-    if (!name || !user || !password) {
+    if (!user || !password) {
         res.send(401, 'no user or no password');
         return;
     }
     userDao.lookup(user, function(err, u) {
     if (u) {
-        res.send(401, "User exists:", user);
+        res.send('401 Username already used, please try again.');
+        console.log("Username already exists.")
         return;
     }
     userDao.create(name, user, password);
-    console.log("register user", user, "password", password);
+    console.log("name", name, "register user", user, "password", password);
+    userDao.getAllUsers();
     res.redirect('/login');
     });
+
 }
