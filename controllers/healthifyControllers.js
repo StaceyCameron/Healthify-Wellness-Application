@@ -1,4 +1,5 @@
 const userDao = require('../models/userModel.js');
+const auth = require('../auth/auth.js');
 
 exports.show_landing_page = function(req, res) {
     res.render("landing");
@@ -49,5 +50,19 @@ exports.post_new_user = function(req, res) {
     userDao.getAllUsers();
     res.redirect('/login');
     });
-
 }
+
+exports.authorize = function(redirect) {
+    return passport.authenticate('local',
+    { failureRedirect: redirect});
+};
+
+exports.post_login = function(req, res) {
+     console.log("User authenticated")
+     res.redirect('/home');
+};
+
+exports.logout = function(req, res) {
+    req.logout();
+    res.redirect('/');
+};

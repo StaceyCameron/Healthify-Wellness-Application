@@ -5,6 +5,15 @@ const path = require('path');
 const public = path.join(__dirname,'public');
 app.use(express.static(public));
 
+const session = require('express-session');
+const auth = require('./auth/auth');
+const passport = require('passport');
+
+app.use(session({ secret: 'its a secret', resave: false, saveUninitialized: false }));
+app.use(passport.initialize());
+app.use(passport.session());
+auth.init(app);
+
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
 
