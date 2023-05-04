@@ -52,17 +52,3 @@ exports.post_new_user = function(req, res) {
     });
 }
 
-exports.authorize = function(redirect) {
-    return passport.authenticate('local',
-    { failureRedirect: redirect});
-};
-
-exports.post_login = function(req, res) {
-     console.log("User authenticated")
-     res.redirect('/home');
-};
-
-exports.logout = function(req, res) {
-    req.logout();
-    res.redirect('/');
-};
