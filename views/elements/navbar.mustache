@@ -30,14 +30,10 @@
                 <a class="nav-link dropdown-toggle text-white fw-normal fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Account
                 </a>
-                {{^user}}
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #323a45">
                     <a class="dropdown-item text-white" id="login" href="/register">Register</a>
                     <a class="dropdown-item text-white" id="login" href="/login">Login</a>
-                {{/user}}
-                {{#user}}
                     <a class="dropdown-item text-white" id="logout" href="/logout">Logout</a>
-                {{/user}}
                 </div>
             </li>
         </ul>
