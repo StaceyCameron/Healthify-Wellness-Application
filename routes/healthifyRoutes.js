@@ -14,7 +14,6 @@ router.post('/register', controller.post_new_user);
 
 router.get('/login', controller.show_login_page);
 router.post('/login', login, controller.handle_login);
-router.get("/loggedIn",verify, controller.loggedIn_landing);
 router.get("/logout", controller.logout);
 
 router.get('/goals', verify, controller.show_goals_page);

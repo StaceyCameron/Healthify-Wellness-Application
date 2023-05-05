@@ -26,7 +26,6 @@ exports.show_register_page = function(req, res) {
 }
 
 exports.post_new_user = function(req, res) {
-    const name = req.body.fname;
     const user = req.body.username;
     const password = req.body.pass;
 
@@ -40,8 +39,8 @@ exports.post_new_user = function(req, res) {
         console.log("Username already exists.")
         return;
     }
-    userDao.create(name, user, password);
-    console.log("name", name, "register user", user, "password", password);
+    userDao.create(user, password);
+    console.log("register user", user, "password", password);
     userDao.getAllUsers();
     res.redirect('/login');
     });
@@ -56,12 +55,7 @@ exports.handle_login = function (req, res) {
     res.redirect("/");
   };
 
-  exports.loggedIn_landing = function (req, res) {
-    res.send("Welcome", user);
-    console.log("user logged in")
-  };
-
-  exports.logout = function (req, res) {
+exports.logout = function (req, res) {
     res.clearCookie("jwt").status(200).redirect("/");
     console.log("jwt cleared session ended")
-  };
+};

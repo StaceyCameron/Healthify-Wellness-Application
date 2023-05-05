@@ -16,23 +16,21 @@ class UserDAO {
     // for the demo the password is the bcrypt of the user name
     init() {
         this.db.insert({
-            name: 'Stacey',
-            user: 'scamer300',
+            user: 'stacey',
             password:
             '$2a$10$c3b5zBIfap9H9oXwqKq5.eYDx/Q2LG2duAUWfTyjLOQJIomvtwuMe'
         });
-        console.log('Stacey inserted into db');
+        console.log('stacey inserted into db');
         return this;
     }
-    create(fname, username, password) {
+    create(username, password) {
         const that = this;
         bcrypt.hash(password, saltRounds).then(function(hash) {
             var entry = {
-                name: fname,
                 user: username,
                 password: hash,
             };
-            console.log('new user', fname ,'added to db')
+            console.log('new user', username ,'added to db')
             that.db.insert(entry, function (err) {
             if (err) {
             console.log("Can't insert user: ", username);
