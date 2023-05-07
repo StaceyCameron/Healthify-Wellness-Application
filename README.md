@@ -28,27 +28,39 @@ Application should allow users to view information and set goals
     <li>Register</li>
     <li>Login</li>
   </ul>
-- Home Page
-  - Background Image
-  - Shortcut to registration
-- About Us Page
-  - Information about web app
-- Register Page
-  - Motivational message
-  - Registration form
-- Login Page
-  - Motivational message
-  - Login form
-- Wellbeing Information Page
-  - Only accessible by logged in users
-  - Information about nutrition, fitness and lifestyle
-- Goals Page
-  - Only accessble by logged in users
-  - List of active goals
-  - Create new goal
-  - Amend goal
-  - Mark goal as complete
-  - Delete goal
-  - List of completed goals
-  - Sign out
- <ul>
+<li>Home Page</li>
+  <ul>
+    <li>Background Image</li>
+    <li>Shortcut to registration</li>
+  </ul>
+<li>About Us Page</li>
+  <ul>
+   <li>Information about web app</li>
+  </ul>
+<li>Register Page</li>
+  <ul>
+    <li>Motivational message</li>
+    <li>Registration form</li>
+  </ul>
+<li>Login Page</li>
+   <ul>
+    <li>Motivational message</li>
+    <li>Login form</li>
+   </ul>
+<li>Wellbeing Information Page</li>
+   <ul>
+    <li>Only accessible by logged in users</li>
+    <li>Information about nutrition, fitness and lifestyle</li>
+   </ul>
+<li>Goals Page</li>
+  <ul>
+    <li>Only accessble by logged in users</li>
+    <li>List of active goals</li>
+    <li>Create new goal</li>
+    <li>Amend goal</li>
+    <li>Mark goal as complete</li>
+    <li>Delete goal</li>
+    <li>List of completed goals</li>
+    <li>Sign out</li>
+  </ul>
+ </ul>
