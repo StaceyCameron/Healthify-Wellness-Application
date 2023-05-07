@@ -19,14 +19,15 @@ Application should allow users to view information and set goals
 
 <h3>Features that have been Implemented</h3>
 <ul>
-- Navbar
-- Links to
-  - Homepage
-  - About Us
-  - Wellbeing
-  - Goals
-  - Register
-  - Login
+  <li>Navbar</li>
+  <ul>
+    <li>Homepage</li>
+    <li>About Us</li>
+    <li>Wellbeing</li>
+    <li>Goals</li>
+    <li>Register</li>
+    <li>Login</li>
+  </ul>
 - Home Page
   - Background Image
   - Shortcut to registration
