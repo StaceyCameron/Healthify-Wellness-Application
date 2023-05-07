@@ -27,25 +27,25 @@ Features that have been Implemented
   - Register
   - Login
 - Home Page
- - Background Image
- - Shortcut to registration
+  - Background Image
+  - Shortcut to registration
 - About Us Page
- - Information about web app
+  - Information about web app
 - Register Page
- - Motivational message
- - Registration form
+  - Motivational message
+  - Registration form
 - Login Page
- - Motivational message
- - Login form
+  - Motivational message
+  - Login form
 - Wellbeing Information Page
- - Only accessible by logged in users
- - Information about nutrition, fitness and lifestyle
+  - Only accessible by logged in users
+  - Information about nutrition, fitness and lifestyle
 - Goals Page
- - Only accessble by logged in users
- - List of active goals
- - Create new goal
- - Amend goal
- - Mark goal as complete
- - Delete goal
- - List of completed goals
- - Sign out
+  - Only accessble by logged in users
+  - List of active goals
+  - Create new goal
+  - Amend goal
+  - Mark goal as complete
+  - Delete goal
+  - List of completed goals
+  - Sign out
