@@ -1,13 +1,13 @@
-Web Application Development Coursework 2
+<h1>Web Application Development Coursework 2</h1>
 Wellbeing Application
 Application should allow users to view information and set goals
 
-Repository Includes
+<h1>Repository Includes</h1>
 Healthify Web Application
 Test Documentation
 
-How to run the site
-Clone Git Repository
+<h1>How to run the site</h1>
+<p>Clone Git Repository
 git clone 
 Create a .env file in the root of the project
 Add the following into the .env file
@@ -15,9 +15,9 @@ ACCESS_TOKEN_SECRET="Its a secret"
 Run the site
 npm run devStart
 Local version of the site can be accessed using
-http://localhost:3000/
+http://localhost:3000/</p>
 
-Features that have been Implemented
+<h1>Features that have been Implemented</h1>
 - Navbar
 - Links to
   - Homepage
