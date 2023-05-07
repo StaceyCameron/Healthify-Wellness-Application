@@ -18,7 +18,7 @@ Local version of the site can be accessed using
 http://localhost:3000/
 
 Features that have been Implemented
-Navbar
+- Navbar
 - Links to
   - Homepage
   - About Us
@@ -26,21 +26,21 @@ Navbar
   - Goals
   - Register
   - Login
-Home Page
+- Home Page
  - Background Image
  - Shortcut to registration
-About Us Page
+- About Us Page
  - Information about web app
-Register Page
+- Register Page
  - Motivational message
  - Registration form
-Login Page
+- Login Page
  - Motivational message
  - Login form
-Wellbeing Information Page
+- Wellbeing Information Page
  - Only accessible by logged in users
  - Information about nutrition, fitness and lifestyle
-Goals Page
+- Goals Page
  - Only accessble by logged in users
  - List of active goals
  - Create new goal
