@@ -1,6 +1,17 @@
 <h1>Web Application Development Coursework 2</h1>
 Wellbeing Application
 Application should allow users to view information and set goals
+Created using
+<ul>
+  <li>NodeJS</li>
+  <li>JavaScript</li>
+  <li>Express</li>
+  <li>Nedb</li>
+  <li>Mustache</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Bootstrap</li>
+</ul>
 
 <h3>Repository Includes</h3>
 <ul>
@@ -10,7 +21,7 @@ Application should allow users to view information and set goals
 
 <h3>How to run the site</h3>
 <ul>
-<li>Clone Git Repository - git clone</li>
+<li>Clone Git Repository - git clone https://github.com/scamer300/Healthify.git</li>
 <li>Create a .env file in the root of the project</li>
 <li>Add the following into the .env fil - ACCESS_TOKEN_SECRET="Its a secret"</li>
 <li>Run the site - npm run devStart</li>
@@ -62,5 +73,21 @@ Application should allow users to view information and set goals
     <li>Delete goal</li>
     <li>List of completed goals</li>
     <li>Sign out</li>
+  </ul>
+ </ul>
+ 
+ <h3>Development Plan Changes Justification</h3>
+ <ul>
+  <li>Overall Design</li>
+    <ul>
+      <li>During development design flaws were identified for the goals page</li>
+      <li>Colour scheme was altered for user experience</li>
+      <li>Home page features a full screen hero image</li>
+    </ul>
+  <li>Non-Functioning Features</li>
+  <ul>
+    <li>Amend Goal</li>
+    <li>Delete Goal</li>
+    <li>Mark Goal Complete</li>
   </ul>
  </ul>
