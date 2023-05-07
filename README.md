@@ -9,15 +9,16 @@ Application should allow users to view information and set goals
 </ul>
 
 <h3>How to run the site</h3>
-<p>Clone Git Repository</p>
-git clone 
-Create a .env file in the root of the project
-Add the following into the .env file
-ACCESS_TOKEN_SECRET="Its a secret"
-Run the site
-npm run devStart
-Local version of the site can be accessed using
-http://localhost:3000/</p>
+<ul>
+<li>Clone Git Repository</li>
+<li>git clone</li>
+<li>Create a .env file in the root of the project</li>
+<li>Add the following into the .env file</li>
+<li>ACCESS_TOKEN_SECRET="Its a secret"</li>
+<li>Run the site</li>
+<li>npm run devStart</li>
+<li>Local version of the site can be accessed using http://localhost:3000/</li>
+</ul>
 
 <h3>Features that have been Implemented</h3>
 <ul>
