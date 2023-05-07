@@ -5,24 +5,26 @@ const saltRounds = 10;
 class UserDAO {
     constructor(dbFilePath) {
         if (dbFilePath) {
-            //embedded
             this.db = new Datastore({ filename: dbFilePath,
             autoload: true });
         } else {
-            //in memory
             this.db = new Datastore();
+            console.log('user db created');
         }
     }
-    // for the demo the password is the bcrypt of the user name
+    
+    //Initialise the user database
     init() {
+        //set up user for testing purposes
         this.db.insert({
             user: 'stacey',
             password:
             '$2a$10$c3b5zBIfap9H9oXwqKq5.eYDx/Q2LG2duAUWfTyjLOQJIomvtwuMe'
         });
-        console.log('stacey inserted into db');
+        console.log('stacey inserted into user db');
         return this;
     }
+    //create new user and hash the password
     create(username, password) {
         const that = this;
         bcrypt.hash(password, saltRounds).then(function(hash) {
@@ -38,6 +40,7 @@ class UserDAO {
             });
         });
     }
+    //search for a user
     lookup(user, cb) {
         this.db.find({'user': user}, function (err, entries) {
         if (err) {
@@ -51,19 +54,14 @@ class UserDAO {
         });
     }
 
+    //get all users
     getAllUsers() {
-        //return a Promise object, which can be resolved or rejected
         return new Promise((resolve, reject) => {
-            //use the find() function of the database to get the data,
-            //error first callback function, err for error, entries for data
             this.db.find({}, function(err, user) {
-                //if error occurs reject Promise
                 if (err) {
                     reject(err);
-                //if no error resolve the promise & return the data
                 } else {
                     resolve(user);
-                    //to see what the returned data looks like
                     console.log('function all() returns: ', user);
                 }
             })

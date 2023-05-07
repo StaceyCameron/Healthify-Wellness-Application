@@ -3,6 +3,7 @@ const userModel = require("../models/userModel");
 const jwt = require("jsonwebtoken");
 
 exports.login = function (req, res,next) {
+  //require username and password from user input
   let username = req.body.username;
   let password = req.body.password;
 
@@ -15,10 +16,9 @@ exports.login = function (req, res,next) {
       console.log("user ", username, " not found");
       return res.render("user/register");
     }
-    //compare provided password with stored password
+    //compare posted password with database password
     bcrypt.compare(password, user.password, function (err, result) {
       if (result) {
-        //use the payload to store information about the user such as username.
         let payload = { username: username };
         //create the access token 
         let accessToken = jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET,{expiresIn: 300}); 
@@ -32,6 +32,7 @@ exports.login = function (req, res,next) {
   });
 };
 
+//verify user is logged in
 exports.verify = function (req, res, next) {
   let accessToken = req.cookies.jwt;
   if (!accessToken) {
@@ -43,8 +44,7 @@ exports.verify = function (req, res, next) {
     next();
     console.log("User verified")
   } catch (e) {
-    //if an error occurred return request unauthorized error
-    res.status(401).send();
+    console.log("error occurred during verification")
     res.render("user/login");
   }
 };
