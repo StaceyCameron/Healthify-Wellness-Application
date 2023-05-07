@@ -4,7 +4,7 @@
   "description": "Wellbeing application with goal setting and tracker",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
