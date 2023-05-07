@@ -24,6 +24,12 @@ router.get('/complete', controller.show_complete_page);
 router.get('/markComplete', controller.mark_goal_complete);
 
 router.use(function(req, res) {
+    res.status(401);
+    res.type('text/plain');
+    res.send('Username/password is incorrect.');
+})
+
+router.use(function(req, res) {
     res.status(404);
     res.type('text/plain');
     res.send('404 Not found.');

@@ -140,7 +140,7 @@ exports.update_goal = function (req, res) {
 exports.show_complete_page = function (req, res) {
   db.getCompletedGoals()
     .then((list) => {
-      res.render("goals", {
+      res.render("complete", {
         title: "Goals",
         user: "user",
         goal: list,

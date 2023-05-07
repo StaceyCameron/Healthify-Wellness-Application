@@ -10,11 +10,11 @@ exports.login = function (req, res,next) {
   userModel.lookup(username, function (err, user) {
     if (err) {
       console.log("error looking up user", err);
-      return res.status(401).send();
+      return res.status(401).send("401 User not found");
     }
     if (!user) {
       console.log("user ", username, " not found");
-      return res.render("user/register");
+      return res.status(401).send("401 User not found");
     }
     //compare posted password with database password
     bcrypt.compare(password, user.password, function (err, result) {
@@ -26,7 +26,7 @@ exports.login = function (req, res,next) {
         console.log("Session started for", username);
         next();
       } else {
-        return res.render("user/login");
+        return res.status(401).send("401 Username/Password incorrect");;
       }
     });
   });

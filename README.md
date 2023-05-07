@@ -83,6 +83,7 @@ Created using
       <li>During development design flaws were identified for the goals page</li>
       <li>Colour scheme was altered for user experience</li>
       <li>Home page features a full screen hero image</li>
+      <li>Mobile responsiveness could be improved</li>
     </ul>
   <li>Non-Functioning Features</li>
   <ul>
