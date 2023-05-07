@@ -13,6 +13,9 @@ Created using
   <li>Bootstrap</li>
 </ul>
 
+<h3>Access Live Site</h3>
+<h5>https://wad2-healthify.onrender.com</h5>
+
 <h3>Repository Includes</h3>
 <ul>
   <li>Healthify Web Application</li>
@@ -24,8 +27,7 @@ Created using
 <li>Clone Git Repository - git clone https://github.com/scamer300/Healthify.git</li>
 <li>Create a .env file in the root of the project</li>
 <li>Add the following into the .env fil - ACCESS_TOKEN_SECRET="Its a secret"</li>
-<li>Run the site - npm run devStart</li>
-<li>Local version of the site can be accessed using http://localhost:3000/</li>
+<li>Run the site - node index.js</li>
 </ul>
 
 <h3>Features that have been Implemented</h3>
