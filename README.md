@@ -2,12 +2,14 @@
 Wellbeing Application
 Application should allow users to view information and set goals
 
-<h1>Repository Includes</h1>
-Healthify Web Application
-Test Documentation
+<h3>Repository Includes</h3>
+<ul>
+  <li>Healthify Web Application</li>
+  <li>Test Documentation</li>
+</ul>
 
-<h1>How to run the site</h1>
-<p>Clone Git Repository
+<h3>How to run the site</h3>
+<p>Clone Git Repository</p>
 git clone 
 Create a .env file in the root of the project
 Add the following into the .env file
@@ -17,7 +19,8 @@ npm run devStart
 Local version of the site can be accessed using
 http://localhost:3000/</p>
 
-<h1>Features that have been Implemented</h1>
+<h3>Features that have been Implemented</h3>
+<ul>
 - Navbar
 - Links to
   - Homepage
@@ -49,3 +52,4 @@ http://localhost:3000/</p>
   - Delete goal
   - List of completed goals
   - Sign out
+ <ul>
