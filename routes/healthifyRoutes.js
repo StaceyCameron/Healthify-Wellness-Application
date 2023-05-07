@@ -14,10 +14,14 @@ router.post('/register', controller.post_new_user);
 
 router.get('/login', controller.show_login_page);
 router.post('/login', login, controller.handle_login);
-router.get("/logout", controller.logout);
+router.get("/logout", verify, controller.logout);
 
 router.get('/goals', verify, controller.show_goals_page);
+router.post('/new', controller.create_new_goal);
+router.post('/update', controller.update_goal);
+router.post('/delete', controller.delete_goal);
 router.get('/complete', controller.show_complete_page);
+router.get('/markComplete', controller.mark_goal_complete);
 
 router.use(function(req, res) {
     res.status(404);

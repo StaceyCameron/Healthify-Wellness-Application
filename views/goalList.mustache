@@ -1,0 +1,24 @@
+<body>
+
+{{#goal}}
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">{{category}}</h4>
+    <p class="card-text">
+      Goal: {{description}}
+    </p>
+    <p>
+      Target Date:{{date}}
+    </p>
+    <div>
+      <input type="submit" value="Delete" class="btn text-white active" style="background-color: #046880">
+      <button type="button" class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#updateModal" style="background-color: #046880">
+        Amend
+      </button>
+      <input type="submit" value="Mark as Complete" href="/markComplete"class="btn text-white active" style="background-color: #046880">
+    </div>
+  </div>
+</div>
+{{/goal}}
+
+</body>

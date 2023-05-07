@@ -1,0 +1,27 @@
+<!-- Modal -->
+<form method="post" role="form" action="/new">
+<div class=" form-group modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Create a Goal</h4>
+        </div>
+        <div class="modal-body text-center">
+            <input type="text" class="form-control" id="category" name="category" placeholder="Nutrition, Fitness or Lifestyle" required>
+        </div>
+        <div class="modal-body text-center">
+            <textarea class="form-control" id="description" name="description" placeholder="Enter details of your goal here..." rows="3" required></textarea>
+        </div>
+        <div class="modal-body text-center">
+            <input type="date" class="form-control" id="date" name="date" required>
+        </div>
+        <div class="modal-body text-center">
+            <input type="text" class="form-control" id="author" name="author" placeholder="Enter your name..." required>
+        </div>
+        <div class="modal-footer text-center">
+            <input type="submit" value="Create Goal" class="btn text-white active" style="background-color: #046880">
+        </div>
+    </div>
+</div>
+</form>
