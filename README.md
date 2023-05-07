@@ -14,7 +14,7 @@ Created using
 </ul>
 
 <h3>Access Live Site</h3>
-<h5>https://wad2-healthify.onrender.com</h5>
+https://wad2-healthify.onrender.com
 
 <h3>Repository Includes</h3>
 <ul>
